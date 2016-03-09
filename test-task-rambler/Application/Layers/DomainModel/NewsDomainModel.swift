@@ -14,8 +14,6 @@ struct NewsDomainModel: Comparable {
   var source: String!
   var pubDate: NSDate!
   var image: NSURL?
-  
-  
 }
 
 func <(lhs: NewsDomainModel, rhs: NewsDomainModel) -> Bool {

@@ -23,6 +23,10 @@ extension NewsListModulePresenter: NewsListModuleViewOutput {
   func viewDidLoad() {
     self.interactor.loadNews()
   }
+  
+  func refreshRequested() {
+    self.interactor.loadNews()
+  }
 }
 
 extension NewsListModulePresenter: NewsListModuleInteractorOutput {

@@ -112,10 +112,9 @@
 		2D434AF91C8F3ACB00016CAB /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				2D434B251C8F4F3100016CAB /* Interface */,
+				2D434B371C904CC700016CAB /* Services */,
 				2D434B301C90150300016CAB /* Layers */,
 				2D434AFB1C8F3B0C00016CAB /* Router */,
-				2D434B221C8F4ECB00016CAB /* XML */,
 				2DCF53041C8F1868007167F0 /* AppDelegate.swift */,
 				2D434B201C8F4E4B00016CAB /* Settings.swift */,
 			);
@@ -247,6 +246,15 @@
 				2D434B351C90370400016CAB /* NewsListModuleCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		2D434B371C904CC700016CAB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2D434B221C8F4ECB00016CAB /* XML */,
+				2D434B251C8F4F3100016CAB /* Interface */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		2DCF52F81C8F1868007167F0 = {

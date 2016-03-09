@@ -8,4 +8,5 @@
 
 protocol NewsListModuleViewOutput: class {
   func viewDidLoad()
+  func refreshRequested()
 }

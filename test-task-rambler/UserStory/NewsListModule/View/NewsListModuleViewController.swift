@@ -9,7 +9,8 @@
 import UIKit
 
 class NewsListModuleViewController: UIViewController, NewsListModuleViewInput {
-  let newsCellIdentifier = "newsCellIdentifier"
+  let kNewsCellIdentifier = "newsCellIdentifier"
+  let kDefaultCellHeight: CGFloat = 116
   
   weak var output: NewsListModuleViewOutput!
   
@@ -21,21 +22,28 @@ class NewsListModuleViewController: UIViewController, NewsListModuleViewInput {
   }
   
   @IBOutlet weak var tableView: UITableView!
+  var refreshControl: UIRefreshControl!
   
-
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    tableView.delegate = self
-    tableView.dataSource = self
-    tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0)
+    self.refreshControl = UIRefreshControl()
+    self.refreshControl.addTarget(self, action: "refreshPulled", forControlEvents: .ValueChanged)
+    self.tableView.addSubview(self.refreshControl)
     
-    output.viewDidLoad()
+    self.tableView.delegate = self
+    self.tableView.dataSource = self
+    self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0)
+    
+    self.output.viewDidLoad()
+    self.refreshControl.beginRefreshing()
   }
   
   //MARK: View input
   
   func update(withNews news: [NewsDomainModel]) {
+    self.refreshControl.endRefreshing()
+    
     self.news = news
     
     self.tableView.reloadData()
@@ -58,6 +66,12 @@ class NewsListModuleViewController: UIViewController, NewsListModuleViewInput {
     
     return false
   }
+  
+  //MARK: Actions
+  
+  func refreshPulled() {
+    self.output.refreshRequested()
+  }
 }
 
 extension NewsListModuleViewController: UITableViewDataSource {
@@ -74,7 +88,7 @@ extension NewsListModuleViewController: UITableViewDataSource {
   }
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier(self.newsCellIdentifier, forIndexPath: indexPath) as! NewsListModuleCell
+    let cell = tableView.dequeueReusableCellWithIdentifier(self.kNewsCellIdentifier, forIndexPath: indexPath) as! NewsListModuleCell
     
     if let news = self.news(atIndex: indexPath) {
       cell.fill(news, expanded: self.expandedCells[indexPath.row])
@@ -97,8 +111,8 @@ extension NewsListModuleViewController: UITableViewDelegate {
       } else {
         height = NewsListModuleCell.height(forTitle: "[\(news.source)] \(news.title)", inWidth: width)
         
-        if height < 116 {
-          height = 116
+        if height < self.kDefaultCellHeight {
+          height = self.kDefaultCellHeight
         }
       }
     }
