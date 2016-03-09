@@ -90,7 +90,7 @@
 			children = (
 				2DCF53101C8F1868007167F0 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		2D434AF51C8F335900016CAB /* Resources */ = {
@@ -98,7 +98,7 @@
 			children = (
 				2D434AF61C8F336A00016CAB /* Images */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		2D434AF61C8F336A00016CAB /* Images */ = {
@@ -106,20 +106,20 @@
 			children = (
 				2DCF530B1C8F1868007167F0 /* Assets.xcassets */,
 			);
-			name = Images;
+			path = Images;
 			sourceTree = "<group>";
 		};
 		2D434AF91C8F3ACB00016CAB /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				2D434B301C90150300016CAB /* Layers */,
 				2D434B251C8F4F3100016CAB /* Interface */,
-				2D434B221C8F4ECB00016CAB /* XML */,
+				2D434B301C90150300016CAB /* Layers */,
 				2D434AFB1C8F3B0C00016CAB /* Router */,
+				2D434B221C8F4ECB00016CAB /* XML */,
 				2DCF53041C8F1868007167F0 /* AppDelegate.swift */,
 				2D434B201C8F4E4B00016CAB /* Settings.swift */,
 			);
-			name = Application;
+			path = Application;
 			sourceTree = "<group>";
 		};
 		2D434AFA1C8F3AD300016CAB /* UserStory */ = {
@@ -128,7 +128,7 @@
 				2D434B001C8F3D2000016CAB /* NewsListModule */,
 				2D434AFE1C8F3CC500016CAB /* StoryBoard */,
 			);
-			name = UserStory;
+			path = UserStory;
 			sourceTree = "<group>";
 		};
 		2D434AFB1C8F3B0C00016CAB /* Router */ = {
@@ -136,28 +136,28 @@
 			children = (
 				2D434AFC1C8F3B6700016CAB /* MainRouter.swift */,
 			);
-			name = Router;
+			path = Router;
 			sourceTree = "<group>";
 		};
 		2D434AFE1C8F3CC500016CAB /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
-				2DCF53081C8F1868007167F0 /* Main.storyboard */,
 				2DCF530D1C8F1868007167F0 /* LaunchScreen.storyboard */,
+				2DCF53081C8F1868007167F0 /* Main.storyboard */,
 			);
-			name = StoryBoard;
+			path = StoryBoard;
 			sourceTree = "<group>";
 		};
 		2D434B001C8F3D2000016CAB /* NewsListModule */ = {
 			isa = PBXGroup;
 			children = (
-				2D434B051C8F3D8C00016CAB /* View */,
-				2D434B041C8F3D8700016CAB /* Router */,
-				2D434B031C8F3D7200016CAB /* Presenter */,
-				2D434B021C8F3D6C00016CAB /* Interactor */,
 				2D434B011C8F3D6400016CAB /* Assembly */,
+				2D434B021C8F3D6C00016CAB /* Interactor */,
+				2D434B031C8F3D7200016CAB /* Presenter */,
+				2D434B041C8F3D8700016CAB /* Router */,
+				2D434B051C8F3D8C00016CAB /* View */,
 			);
-			name = NewsListModule;
+			path = NewsListModule;
 			sourceTree = "<group>";
 		};
 		2D434B011C8F3D6400016CAB /* Assembly */ = {
@@ -165,17 +165,17 @@
 			children = (
 				2D434B061C8F3DDE00016CAB /* NewsListModuleAssembly.swift */,
 			);
-			name = Assembly;
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 		2D434B021C8F3D6C00016CAB /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				2D434B101C8F420600016CAB /* NewsListModuleInteractorInput.swift */,
 				2D434B181C8F442500016CAB /* NewsListModuleInteractor.swift */,
+				2D434B101C8F420600016CAB /* NewsListModuleInteractorInput.swift */,
 				2D434B1C1C8F487C00016CAB /* NewsListModuleInteractorOutput.swift */,
 			);
-			name = Interactor;
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		2D434B031C8F3D7200016CAB /* Presenter */ = {
@@ -184,16 +184,16 @@
 				2D434B0A1C8F40B900016CAB /* NewsListModuleInput.swift */,
 				2D434B0C1C8F412400016CAB /* NewsListModulePresenter.swift */,
 			);
-			name = Presenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		2D434B041C8F3D8700016CAB /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				2D434B121C8F422600016CAB /* NewsListModuleRouterInput.swift */,
 				2D434B141C8F433D00016CAB /* NewsListModuleRouter.swift */,
+				2D434B121C8F422600016CAB /* NewsListModuleRouterInput.swift */,
 			);
-			name = Router;
+			path = Router;
 			sourceTree = "<group>";
 		};
 		2D434B051C8F3D8C00016CAB /* View */ = {
@@ -204,25 +204,25 @@
 				2D434B0E1C8F41C600016CAB /* NewsListModuleViewInput.swift */,
 				2D434B1A1C8F457600016CAB /* NewsListModuleViewOutput.swift */,
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		2D434B221C8F4ECB00016CAB /* XML */ = {
 			isa = PBXGroup;
 			children = (
-				2D434B231C8F4F1B00016CAB /* XMLParser.swift */,
 				2D434B281C8F4FA200016CAB /* XMLFetcher.swift */,
+				2D434B231C8F4F1B00016CAB /* XMLParser.swift */,
 			);
-			name = XML;
+			path = XML;
 			sourceTree = "<group>";
 		};
 		2D434B251C8F4F3100016CAB /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				2D434B261C8F4F4800016CAB /* XMLParserInterface.swift */,
 				2D434B2A1C8F4FC000016CAB /* XMLFetcherInterface.swift */,
+				2D434B261C8F4F4800016CAB /* XMLParserInterface.swift */,
 			);
-			name = Interface;
+			path = Interface;
 			sourceTree = "<group>";
 		};
 		2D434B301C90150300016CAB /* Layers */ = {
@@ -230,7 +230,7 @@
 			children = (
 				2D434B311C90151000016CAB /* DomainModel */,
 			);
-			name = Layers;
+			path = Layers;
 			sourceTree = "<group>";
 		};
 		2D434B311C90151000016CAB /* DomainModel */ = {
@@ -238,7 +238,7 @@
 			children = (
 				2D434B321C90152D00016CAB /* NewsDomainModel.swift */,
 			);
-			name = DomainModel;
+			path = DomainModel;
 			sourceTree = "<group>";
 		};
 		2D434B341C9036E400016CAB /* Cells */ = {
@@ -246,16 +246,16 @@
 			children = (
 				2D434B351C90370400016CAB /* NewsListModuleCell.swift */,
 			);
-			name = Cells;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		2DCF52F81C8F1868007167F0 = {
 			isa = PBXGroup;
 			children = (
-				2DCF53031C8F1868007167F0 /* test-task-rambler */,
-				2DCF53021C8F1868007167F0 /* Products */,
-				1E82E6AD23F87CE88E210A90 /* Pods */,
 				618BD898B7EC1323E0B72BBF /* Frameworks */,
+				1E82E6AD23F87CE88E210A90 /* Pods */,
+				2DCF53021C8F1868007167F0 /* Products */,
+				2DCF53031C8F1868007167F0 /* test-task-rambler */,
 			);
 			sourceTree = "<group>";
 		};
@@ -271,9 +271,9 @@
 			isa = PBXGroup;
 			children = (
 				2D434AF91C8F3ACB00016CAB /* Application */,
-				2D434AFA1C8F3AD300016CAB /* UserStory */,
 				2D434AF51C8F335900016CAB /* Resources */,
 				2D434AF41C8F331400016CAB /* Supporting Files */,
+				2D434AFA1C8F3AD300016CAB /* UserStory */,
 			);
 			path = "test-task-rambler";
 			sourceTree = "<group>";
@@ -439,6 +439,7 @@
 				2DCF53091C8F1868007167F0 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		2DCF530D1C8F1868007167F0 /* LaunchScreen.storyboard */ = {
@@ -447,6 +448,7 @@
 				2DCF530E1C8F1868007167F0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -541,7 +543,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = "test-task-rambler/Info.plist";
+				INFOPLIST_FILE = "test-task-rambler/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.anakros.test-task-rambler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -555,7 +557,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = "test-task-rambler/Info.plist";
+				INFOPLIST_FILE = "test-task-rambler/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.anakros.test-task-rambler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
