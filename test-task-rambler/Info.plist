@@ -6,6 +6,16 @@
 	<dict>
 		<key>NSExceptionDomains</key>
 		<dict>
+			<key>img.gazeta.ru</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+			<key>icdn.lenta.ru</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
 			<key>www.gazeta.ru</key>
 			<dict>
 				<key>NSExceptionAllowsInsecureHTTPLoads</key>
