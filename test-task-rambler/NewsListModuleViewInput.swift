@@ -9,5 +9,5 @@
 import Foundation
 
 protocol NewsListModuleViewInput {
-  
+  func update(withNews news: [NewsDomainModel])
 }

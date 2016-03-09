@@ -18,13 +18,9 @@ class NewsListModuleInteractor: NewsListModuleInteractorInput {
       data in
       
       if data.count > 0 {
-        let items = self.XMLParser.parse(data)
+        let items = self.XMLParser.parse(data).sort(>)
         
-        let sorted = items.sort(>)
-        
-        for item in sorted {
-          print(item.source, item.title)
-        }
+        self.output.newsDidLoad(items)
       }
     }
   }

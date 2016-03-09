@@ -27,6 +27,6 @@ extension NewsListModulePresenter: NewsListModuleViewOutput {
 
 extension NewsListModulePresenter: NewsListModuleInteractorOutput {
   func newsDidLoad(news: [NewsDomainModel]) {
-    
+    self.view.update(withNews: news)
   }
 }

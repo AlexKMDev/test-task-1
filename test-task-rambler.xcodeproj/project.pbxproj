@@ -25,6 +25,7 @@
 		2D434B291C8F4FA200016CAB /* XMLFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D434B281C8F4FA200016CAB /* XMLFetcher.swift */; };
 		2D434B2B1C8F4FC000016CAB /* XMLFetcherInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D434B2A1C8F4FC000016CAB /* XMLFetcherInterface.swift */; };
 		2D434B331C90152D00016CAB /* NewsDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D434B321C90152D00016CAB /* NewsDomainModel.swift */; };
+		2D434B361C90370400016CAB /* NewsListModuleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D434B351C90370400016CAB /* NewsListModuleCell.swift */; };
 		2DCF53051C8F1868007167F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCF53041C8F1868007167F0 /* AppDelegate.swift */; };
 		2DCF530A1C8F1868007167F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DCF53081C8F1868007167F0 /* Main.storyboard */; };
 		2DCF530C1C8F1868007167F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DCF530B1C8F1868007167F0 /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 		2D434B281C8F4FA200016CAB /* XMLFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLFetcher.swift; sourceTree = "<group>"; };
 		2D434B2A1C8F4FC000016CAB /* XMLFetcherInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLFetcherInterface.swift; sourceTree = "<group>"; };
 		2D434B321C90152D00016CAB /* NewsDomainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDomainModel.swift; sourceTree = "<group>"; };
+		2D434B351C90370400016CAB /* NewsListModuleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsListModuleCell.swift; sourceTree = "<group>"; };
 		2DCF53011C8F1868007167F0 /* test-task-rambler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test-task-rambler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DCF53041C8F1868007167F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DCF53091C8F1868007167F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 		2D434B051C8F3D8C00016CAB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2D434B341C9036E400016CAB /* Cells */,
 				2D434B081C8F3E6A00016CAB /* NewsListModuleViewController.swift */,
 				2D434B0E1C8F41C600016CAB /* NewsListModuleViewInput.swift */,
 				2D434B1A1C8F457600016CAB /* NewsListModuleViewOutput.swift */,
@@ -236,6 +239,14 @@
 				2D434B321C90152D00016CAB /* NewsDomainModel.swift */,
 			);
 			name = DomainModel;
+			sourceTree = "<group>";
+		};
+		2D434B341C9036E400016CAB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2D434B351C90370400016CAB /* NewsListModuleCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		2DCF52F81C8F1868007167F0 = {
@@ -398,6 +409,7 @@
 			files = (
 				2D434B1B1C8F457600016CAB /* NewsListModuleViewOutput.swift in Sources */,
 				2D434B131C8F422600016CAB /* NewsListModuleRouterInput.swift in Sources */,
+				2D434B361C90370400016CAB /* NewsListModuleCell.swift in Sources */,
 				2D434B271C8F4F4800016CAB /* XMLParserInterface.swift in Sources */,
 				2D434B111C8F420600016CAB /* NewsListModuleInteractorInput.swift in Sources */,
 				2D434B191C8F442500016CAB /* NewsListModuleInteractor.swift in Sources */,
