@@ -28,7 +28,10 @@ class XMLParser: NSObject, XMLParserInterface {
             model.title = item["title"].stringValue
             model.description = item["description"].stringValue
             model.pubDate = self.formatDate(item["pubDate"].stringValue)
-//            model.image = item["enclosure"].attributes["url"]
+            
+            if let url = item["enclosure"].attributes["url"] {
+              model.image = NSURL(string: url)
+            }
             
             result.append(model)
           }
